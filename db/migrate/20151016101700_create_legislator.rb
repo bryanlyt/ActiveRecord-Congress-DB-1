@@ -1,4 +1,4 @@
-
+require_relative '../config'
 
 class CreateLegislator < ActiveRecord::Migration
 	def change
@@ -12,7 +12,7 @@ class CreateLegislator < ActiveRecord::Migration
 			t.string :party
 			t.string :state
 			t.string :district
-			t.boolean :in_office
+			t.string :in_office
 			t.string :gender
 			t.string :phone
 			t.string :fax
